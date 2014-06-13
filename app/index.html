@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GistRunner</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/gist-runner.css">
+  </head>
+  <body>
+    <script>
+      window.GistRunnerENV = {{ENV}};
+      window.EmberENV = window.GistRunnerENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/gist-runner.js"></script>
+    <script>
+      window.GistRunner = require('gist-runner/app')['default'].create(GistRunnerENV.APP);
+    </script>
+  </body>
+</html>
