@@ -15,11 +15,13 @@ This README outlines the details of collaborating on this Ember application.
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
+`ember test` runs tests once CI style
+
+`ember test --server` brings up the Testem interface for tests to run on saved changes.
+
 
 ## Building
 
-* `ember build`
+`ember build`
 
 For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
