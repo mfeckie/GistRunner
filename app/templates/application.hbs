@@ -1,9 +1,42 @@
-<h1>Run my Gist</h1>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Run My Gist</a>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
 
-{{outlet}}
+            {{input type="text" value=gistURL}}
 
-{{input type="text" value=gistURL}}
+            <div class="btn btn-default" {{action 'runIT'}}  >Run my Gist</div>
 
-<button {{action 'runIT'}}  >Run my Gist</button>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Results
+                </div>
+                <div class="panel-body">
+                    {{result}}
+                </div>
+            </div>
 
-{{textarea value=result}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-12">
+            {{outlet}}
+        </div>
+    </div>
+</div>
+
