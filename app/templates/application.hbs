@@ -1,3 +1,9 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<h1>Run my Gist</h1>
 
 {{outlet}}
+
+{{input type="text" value=gistURL}}
+
+<button {{action 'runIT'}}  >Run my Gist</button>
+
+{{textarea value=result}}
