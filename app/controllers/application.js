@@ -4,8 +4,7 @@ export default Ember.Controller.extend({
   gistURL: 'some/default/thing',
   actions: {
     runIT: function() {
-      console.log(this.get('gistURL'));
+      this.set('result', 'When finished this will be full of super cool stuff!! FTW')
     }
-  },
-  result: "Whatver"
+  }
 });
